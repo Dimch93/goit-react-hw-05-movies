@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams, useLocation } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
-import { fetchMovieByName } from '../../../Api/MoviesApi';
-import { SearchMovies } from '../../SearchMovies/SearchMovies';
+import { fetchMovieByName } from '../../Api/MoviesApi';
+import { SearchMovies } from '../../components/SearchMovies/SearchMovies';
 import {
   List,
   ListItem,
   SectionTitle,
   StyledLink,
   StyledSection,
-} from '../../MovieList/MovieList.styled';
+} from '../../components/MovieList/MovieList.styled';
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
